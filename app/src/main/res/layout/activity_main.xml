@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!-- <fragment
+         android:id="@+id/fragmento_camara"
+
+         android:layout_height="0px"
+         android:name="com.facebook_login.diegoramirez.camara2.FragmentoCamara"
+         android:layout_weight="3"
+         android:layout_width="fill_parent"
+         />-->
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        />
+
+   <!-- <LinearLayout
+
+        android:id="@+id/capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+
+        android:onClick="captureImage"
+        android:orientation="horizontal" >
+-->
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Capture"
+
+            android:id="@+id/button"
+            android:onClick="captureImage"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="5dp"
+
+             />
+
+
+        <!--Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="front camera"
+            android:id="@+id/front"
+            />
+            -->
+    <!--</LinearLayout>-->
+
+    <!--<ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:id="@+id/img"/>-->
+    <!-- <ProgressBar
+         android:id="@+id/progressBar"
+         style="?android:attr/progressBarStyleLarge"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:visibility="gone"
+          >
+     </ProgressBar>ç
+
+
+ -->
+
+    <ImageView
+        android:id="@+id/goProDialogImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <fragment
+        android:id="@+id/fragmento_informacion"
+
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:layout_width="fill_parent"
+        android:name="camera.diegoramirez.mycam.FragmentoInformacion"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+    <!-- <fragment
+         android:id="@+id/fragmento_publicidad"
+
+         android:layout_height="0px"
+         android:name="com.facebook_login.diegoramirez.camara2.FragmentoPublicidad"
+         android:layout_weight="1"
+         android:layout_width="fill_parent"
+
+         />-->
+
+
+    <!--<ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/foto"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capturar"
+
+        android:id="@+id/btn"/>-->
+
+
+
+
+</LinearLayout>
+
